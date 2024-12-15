@@ -19,7 +19,7 @@ def merge_tiles(zoom, start_lat, start_lon, stop_lat, stop_lon, source_dir, outp
     print("Image width:", w)
     print("Image height:", h)
     
-    result = Image.new("RGBA", (w, h))
+    result = Image.new("RGB", (w, h))
     
     for x in range(x_start, x_stop):
         for y in range(y_start, y_stop):
